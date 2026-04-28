@@ -3,16 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Colorful Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #263238;
+            background: #f7fbff;
+        }
+
+        header {
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #1565c0, #00acc1);
+        }
+
+        header h1 {
+            margin: 0 0 12px;
+            font-size: 40px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px;
+            background: #ffffff;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        button {
+            border: 0;
+            border-radius: 6px;
+            padding: 12px 18px;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+        }
+
+        .blue-button {
+            background: #1976d2;
+        }
+
+        .green-button {
+            background: #2e7d32;
+        }
+
+        .orange-button {
+            background: #ef6c00;
+        }
+
+        main {
+            width: min(1000px, 92%);
+            margin: 35px auto;
+        }
+
+        section {
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #1565c0;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            padding: 20px;
+            border-left: 6px solid #00acc1;
+            border-radius: 8px;
+            background: #e0f7fa;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background: #263238;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ordered List</h1>
-    <H2>PETS</H2>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A simple HTML page with colors, sections, and buttons.</p>
+    </header>
 
-    <ul>
-        <li>Dog</li>
-        <li>Cat</li>
-        <li>Hamster</li>
-    </ul>
+    <nav>
+        <button class="blue-button">Home</button>
+        <button class="green-button">About</button>
+        <button class="orange-button">Contact</button>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About This Page</h2>
+            <p>This website uses basic HTML and CSS to create a clean, colorful layout. It has a header, navigation buttons, content cards, and a footer.</p>
+        </section>
+
+        <section>
+            <h2>Favorite Pets</h2>
+            <ul>
+                <li>Dog</li>
+                <li>Cat</li>
+                <li>Hamster</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Colorful Cards</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Learn</h3>
+                    <p>Practice HTML structure.</p>
+                </div>
+                <div class="card">
+                    <h3>Design</h3>
+                    <p>Add colors and spacing.</p>
+                </div>
+                <div class="card">
+                    <h3>Build</h3>
+                    <p>Create buttons and sections.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with HTML and CSS</p>
+    </footer>
 </body>
 </html>
